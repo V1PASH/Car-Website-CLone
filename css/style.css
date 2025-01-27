@@ -128,3 +128,30 @@
 .navbar .nav-list li:hover div {
     display: block;
 }
+
+
+/*pop up under*/
+
+.navbar .nav-list li div ul li .one-page-pop-up {
+    display: none;
+    position: absolute;
+    left: 170px;
+    top: 320px;
+    background-color: rgb(37, 37, 37);
+}
+
+.navbar .nav-list li div ul li .one-page-pop-up ul {
+    list-style: none;
+}
+
+.navbar .nav-list li div ul li .one-page-pop-up ul li {
+    color: white;
+}
+
+.navbar .nav-list li div ul li .one-page-pop-up ul li:hover {
+    color: #f5b754;
+}
+
+.navbar .nav-list li div ul .one-page:hover .one-page-pop-up {
+    display: block;
+}
