@@ -4,7 +4,7 @@
 }
 
 .container {
-    width: 1530px;
+    width: 1518px;
     margin: 0 auto;
 }
 
@@ -17,6 +17,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/section-1/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 
@@ -213,4 +214,18 @@
 
 .navbar .nav-list li div ul .image-gallery:hover .image-gallery-pop-up {
     display: block;
+}
+
+
+/*button*/
+
+.first button {
+    position: absolute;
+    left: 700px;
+    bottom: 20px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #f5b754;
+    border-radius: 20px;
+    background-color: transparent;
 }
