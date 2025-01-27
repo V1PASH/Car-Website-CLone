@@ -49,7 +49,8 @@
 }
 
 .navbar .nav-list li {
-    padding: 20px;
+    margin: 15px;
+    padding: 10px;
 }
 
 .navbar .nav-list li a {
@@ -72,12 +73,12 @@
     border: 2px solid #f5b754;
     border-radius: 50px;
     margin-right: 10px;
+    transition: 0.3s ease-in-out;
 }
 
 .contact .phone:hover {
     background-color: #f5b754;
     color: black;
-    transition: .3s;
 }
 
 .contact .number ul {
@@ -100,6 +101,14 @@
 
 /* pop up*/
 
+.navbar .nav-list li div ul li {
+    padding: 5px;
+}
+
+.navbar .nav-list li div ul:last-child {
+    padding-bottom: 10px;
+}
+
 .navbar .nav-list li div {
     display: none;
     position: absolute;
@@ -113,16 +122,14 @@
     list-style: none;
 }
 
-.navbar .nav-list li div ul li {
+.navbar .nav-list li div ul li a {
     margin: 0;
-    padding: 15px;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
-.navbar .nav-list li div ul li:hover {
+.navbar .nav-list li div ul li a:hover {
     color: #f5b754;
-    padding-left: 20px;
-    transition: 0.3s;
+    padding-left: 10px;
 }
 
 .navbar .nav-list li:hover div {
@@ -144,14 +151,66 @@
     list-style: none;
 }
 
-.navbar .nav-list li div ul li .one-page-pop-up ul li {
-    color: white;
-}
-
-.navbar .nav-list li div ul li .one-page-pop-up ul li:hover {
-    color: #f5b754;
-}
-
 .navbar .nav-list li div ul .one-page:hover .one-page-pop-up {
+    display: block;
+}
+
+.navbar .nav-list li div ul li .service-detail-popup {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 140px;
+    background-color: rgb(37, 37, 37);
+}
+
+.navbar .nav-list li div ul .service-detail:hover .service-detail-popup {
+    display: block;
+}
+
+.navbar .nav-list li div ul li .car-grid-pop-up {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 165px;
+    background-color: rgb(37, 37, 37);
+}
+
+.navbar .nav-list li div ul .cars-grid:hover .car-grid-pop-up {
+    display: block;
+}
+
+.navbar .nav-list li div ul li .car-types-pop-up {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 165px;
+    background-color: rgb(37, 37, 37);
+}
+
+.navbar .nav-list li div ul .cars-types:hover .car-types-pop-up {
+    display: block;
+}
+
+.navbar .nav-list li div ul li .car-details-pop-up {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 165px;
+    background-color: rgb(37, 37, 37);
+}
+
+.navbar .nav-list li div ul .car-details:hover .car-details-pop-up {
+    display: block;
+}
+
+.navbar .nav-list li div ul li .image-gallery-pop-up {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 165px;
+    background-color: rgb(37, 37, 37);
+}
+
+.navbar .nav-list li div ul .image-gallery:hover .image-gallery-pop-up {
     display: block;
 }
