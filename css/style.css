@@ -9,7 +9,33 @@
 }
 
 
+/* background top*/
+
+.first {
+    width: 100%;
+    height: 728px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/section-1/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
 /* common */
+
+.color-des {
+    color: gray;
+}
+
+.custom-head {
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+}
+
+.color-secondary {
+    color: white;
+}
 
 .color-primary {
     color: #f5b754;
@@ -22,11 +48,16 @@
     padding: 20px 50px;
     border: none;
     border-radius: 30px;
+    transition: .3s;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 .primary-btn::after,
 .secondary-btn::after {
-    content: "";
+    content: '\f061';
+    font-family: fontawesome;
 }
 
 .secondary-btn {
@@ -36,29 +67,43 @@
     color: rgb(255, 255, 255);
     border: 1px solid white;
     border-radius: 30px;
+    transition: .3s;
+    cursor: pointer;
 }
 
 .primary-btn:hover {
     background-color: white;
     color: black;
+    transition: .3s;
 }
 
 .secondary-btn:hover {
     background-color: #f5b754;
     color: black;
     border: 1px solid transparent;
+    transition: .3s;
 }
 
+.right-arrow::after {
+    content: "\f054";
+    font-family: fontawesome;
+    font-size: 10px;
+    padding-left: 20px;
+}
 
-/* background top*/
+.tag {
+    letter-spacing: 5px;
+    font-size: 10px;
+}
 
-.first {
-    width: 100%;
-    height: 728px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/section-1/1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+.bar {
+    position: absolute;
+    bottom: 0px;
+    z-index: 100;
+    left: 50%;
+    height: 50px;
+    width: 2px;
+    background-color: #f5b754;
 }
 
 
@@ -162,6 +207,7 @@
     width: 200px;
     background-color: black;
     border-radius: 20px;
+    z-index: 100;
 }
 
 .navbar .nav-list li div ul {
@@ -265,7 +311,7 @@
 
 /*button*/
 
-.first .bg-btn {
+.first #bg-1 {
     position: absolute;
     left: 700px;
     bottom: 20px;
@@ -274,6 +320,31 @@
     border: 1px solid #f5b754;
     border-radius: 20px;
     background-color: transparent;
+    cursor: pointer;
+}
+
+.first #bg-2 {
+    position: absolute;
+    left: 725px;
+    bottom: 20px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #f5b754;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.first #bg-3 {
+    position: absolute;
+    left: 750px;
+    bottom: 20px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #f5b754;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 
@@ -289,11 +360,6 @@
     position: absolute;
     left: 170px;
     top: 170px;
-}
-
-.main-content .info .tag {
-    letter-spacing: 5px;
-    font-size: 10px;
 }
 
 .main-content .info .car-type {
@@ -314,4 +380,88 @@
 
 .info-and-price .after-price {
     font-size: 12px;
+}
+
+
+/*section01*/
+
+.about-section {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 420px;
+    padding: 10% 0;
+}
+
+.about-section .more-about-us {
+    width: 40%;
+}
+
+.about-section .image {
+    position: relative;
+    width: 30%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.about-section .image img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-section .image:hover img {
+    transform: scale(1.08);
+}
+
+.about-section .image div {
+    position: absolute;
+    z-index: 100;
+    width: 20%;
+    height: 20%;
+    background-color: #000000;
+    align-content: center;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 0 50px 0 0;
+}
+
+.about-section .image div a {
+    text-decoration: none;
+    border: 1px solid #f5b754;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.about-section .image:hover div a {
+    background-color: #f5b754;
+    color: #000000;
+}
+
+.about-section .more-about-us p {
+    margin-top: 10px;
+}
+
+.about-section .more-about-us ul {
+    list-style: none;
+}
+
+.about-section .more-about-us ul li {
+    margin: 40px 0px;
+}
+
+.about-section .more-about-us ul li::before {
+    content: "\f00c";
+    font-family: fontawesome;
+    color: #f5b754;
+    padding: 8px;
+    background-color: #323232;
+    border-radius: 50%;
+    margin-right: 10px;
 }
