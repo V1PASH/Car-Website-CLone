@@ -10,12 +10,13 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="first" id="first">
+
+    <div class="first" id="first">
+        <header>
+            <div class="container">
                 <div class="head-section">
                     <div class="logo">
-                        <span style="color: #f5b754;">R</span>ENAX
+                        <span class="color-primary">R</span>ENAX
                     </div>
                     <div class="navbar">
                         <ul class="nav-list">
@@ -249,9 +250,7 @@
                         </ul>
                     </div>
                     <div class="contact">
-                        <div class="phone">
-                            <i class="fa-solid fa-phone-volume"></i>
-                        </div>
+                        <a href="#"><i class="fa-solid fa-phone-volume"></i></a>
                         <div class="number">
                             <ul>
                                 <li>Need Help?</li>
@@ -260,12 +259,33 @@
                         </div>
                     </div>
                 </div>
-                <button onclick="change()">.</button>
             </div>
+        </header>
 
+        <div class="container">
+            <div class="main-content">
+                <div class="info">
+                    <p class="color-primary tag">* PREMIUM</p>
+                    <h1 class="car-type">
+                        Rental Car
+                    </h1>
+                    <p class="info-and-price">
+                        Bentley Bentayga <span class="color-primary price">$600</span><span class="after-price"> / DAY</span>
+                    </p>
+
+                    <button class="primary-btn">
+                        View Details
+                    </button>
+
+                    <button class="secondary-btn">
+                        Rent Now
+                    </button>
+                </div>
+            </div>
+            <button class="bg-btn" onclick="change()">.</button>
         </div>
-    </header>
-    <script src="js/mysc.js"></script>
+
+        <script src="js/mysc.js"></script>
 </body>
 
 </html>

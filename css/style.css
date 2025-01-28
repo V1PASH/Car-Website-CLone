@@ -9,6 +9,47 @@
 }
 
 
+/* common */
+
+.color-primary {
+    color: #f5b754;
+}
+
+.primary-btn {
+    background-color: #f5b754;
+    margin: 20px 0px;
+    margin-right: 10px;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 30px;
+}
+
+.primary-btn::after,
+.secondary-btn::after {
+    content: "";
+}
+
+.secondary-btn {
+    margin: 20px 0px;
+    padding: 20px 50px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.primary-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.secondary-btn:hover {
+    background-color: #f5b754;
+    color: black;
+    border: 1px solid transparent;
+}
+
+
 /* background top*/
 
 .first {
@@ -54,6 +95,10 @@
     padding: 10px;
 }
 
+.navbar .nav-list li a:hover {
+    color: #f5b754;
+}
+
 .navbar .nav-list li a {
     text-decoration: none;
     color: white;
@@ -65,19 +110,19 @@
     width: 20%;
 }
 
-.contact .phone {
-    font-size: 20px;
-    height: 50px;
-    width: 50px;
+.contact a {
+    border: 1px solid #f5b754;
+    color: #f5b754;
     text-align: center;
     align-content: center;
-    border: 2px solid #f5b754;
+    text-decoration: none;
     border-radius: 50px;
+    padding: 10px 12px;
     margin-right: 10px;
-    transition: 0.3s ease-in-out;
+    font-size: 25px;
 }
 
-.contact .phone:hover {
+.contact a:hover {
     background-color: #f5b754;
     color: black;
 }
@@ -135,6 +180,7 @@
 
 .navbar .nav-list li:hover div {
     display: block;
+    transition: all 0.3s ease;
 }
 
 
@@ -219,7 +265,7 @@
 
 /*button*/
 
-.first button {
+.first .bg-btn {
     position: absolute;
     left: 700px;
     bottom: 20px;
@@ -228,4 +274,44 @@
     border: 1px solid #f5b754;
     border-radius: 20px;
     background-color: transparent;
+}
+
+
+/*main content*/
+
+.main-content {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5b754;
+    position: relative;
+}
+
+.main-content .info {
+    position: absolute;
+    left: 170px;
+    top: 170px;
+}
+
+.main-content .info .tag {
+    letter-spacing: 5px;
+    font-size: 10px;
+}
+
+.main-content .info .car-type {
+    font-weight: 900;
+    color: white;
+    font-size: 80px;
+}
+
+.info-and-price {
+    color: white;
+}
+
+.price {
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.info-and-price .after-price {
+    font-size: 12px;
 }
