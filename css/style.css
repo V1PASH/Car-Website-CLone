@@ -201,13 +201,15 @@
 }
 
 .navbar .nav-list li div {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
     top: 55px;
     width: 200px;
     background-color: black;
     border-radius: 20px;
     z-index: 100;
+    transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .navbar .nav-list li div ul {
@@ -225,15 +227,17 @@
 }
 
 .navbar .nav-list li:hover div {
-    display: block;
-    transition: all 0.3s ease;
+    visibility: visible;
+    opacity: 1;
 }
 
 
 /*pop up under*/
 
 .navbar .nav-list li div ul li .one-page-pop-up {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s ease-in-out, opacity .3s ease-in-out;
     position: absolute;
     left: 170px;
     top: 320px;
@@ -245,11 +249,14 @@
 }
 
 .navbar .nav-list li div ul .one-page:hover .one-page-pop-up {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .navbar .nav-list li div ul li .service-detail-popup {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
     position: absolute;
     top: 100px;
     left: 140px;
@@ -257,11 +264,14 @@
 }
 
 .navbar .nav-list li div ul .service-detail:hover .service-detail-popup {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .navbar .nav-list li div ul li .car-grid-pop-up {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
     position: absolute;
     top: 10px;
     left: 165px;
@@ -269,11 +279,14 @@
 }
 
 .navbar .nav-list li div ul .cars-grid:hover .car-grid-pop-up {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .navbar .nav-list li div ul li .car-types-pop-up {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
     position: absolute;
     top: 100px;
     left: 165px;
@@ -281,11 +294,14 @@
 }
 
 .navbar .nav-list li div ul .cars-types:hover .car-types-pop-up {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .navbar .nav-list li div ul li .car-details-pop-up {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
     position: absolute;
     top: 100px;
     left: 165px;
@@ -293,11 +309,14 @@
 }
 
 .navbar .nav-list li div ul .car-details:hover .car-details-pop-up {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .navbar .nav-list li div ul li .image-gallery-pop-up {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
     position: absolute;
     top: 55px;
     left: 165px;
@@ -305,7 +324,8 @@
 }
 
 .navbar .nav-list li div ul .image-gallery:hover .image-gallery-pop-up {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 
