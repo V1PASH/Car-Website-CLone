@@ -1272,6 +1272,10 @@
     border: 1px solid #f5b754;
 }
 
+.social-links .link:hover {
+    background-color: #f5b754;
+}
+
 .social-links .link a {
     text-decoration: none;
     color: white;
