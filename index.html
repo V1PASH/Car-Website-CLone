@@ -321,78 +321,161 @@
 
     <!-- Section 1 ends here -->
 
-    <!-- Section 2 starts here -->
+    <!-- Section 2 starts here service rent and fleet section-->
     <section class="section-2">
         <div class="container">
-            <div class="services-section">
-                <div class="service-section-head">
-                    <p class="tag color-primary">WHAT WE DO</p>
-                    <h1 class="custom-head"><span class="color-secondary">Our</span> <span class="color-primary">Services</span></h1>
-                </div>
-                <div class="service-option-main">
-                    <div class="Our-services">
-                        <div class="service-options active" id="active0">
-                            <img src="/img/services/1.jpg" alt="">
-                            <div class="corner-box">
-                                <a href="#" class="text">01</a>
+            <div class="sec-2">
+                <div class="services-section">
+                    <div class="service-section-head">
+                        <p class="tag color-primary">WHAT WE DO</p>
+                        <h1 class="custom-head"><span class="color-secondary">Our</span> <span class="color-primary">Services</span></h1>
+                    </div>
+                    <div class="service-option-main">
+                        <div class="Our-services">
+                            <div class="service-options active" id="active0">
+                                <img src="/img/services/1.jpg" alt="">
+                                <div class="corner-box">
+                                    <a href="#" class="text">01</a>
+                                </div>
+                                <div class="service-option-text">
+                                    Corporate Car Rental
+                                </div>
                             </div>
-                            <div class="service-option-text">
-                                Corporate Car Rental
+                            <div class="service-options active" id="active1">
+                                <img src="/img/services/2.jpg" alt="">
+                                <div class="corner-box">
+                                    <a href="#" class="text">02</a>
+                                </div>
+                                <div class="service-option-text">
+                                    Car Rental With Driver
+                                </div>
                             </div>
-                        </div>
-                        <div class="service-options active" id="active1">
-                            <img src="/img/services/2.jpg" alt="">
-                            <div class="corner-box">
-                                <a href="#" class="text">02</a>
+                            <div class="service-options active" id="active2">
+                                <img src="/img/services/3.jpg" alt="">
+                                <div class="corner-box">
+                                    <a href="#" class="text">03</a>
+                                </div>
+                                <div class="service-option-text">
+                                    Airport Transfer
+                                </div>
                             </div>
-                            <div class="service-option-text">
-                                Car Rental With Driver
+                            <div class="service-options not-active" id="not-active0">
+                                <img src="/img/services/4.jpg" alt="">
+                                <div class="corner-box">
+                                    <a href="#" class="text">04</a>
+                                </div>
+                                <div class="service-option-text">
+                                    fleet Leasing
+                                </div>
                             </div>
-                        </div>
-                        <div class="service-options active" id="active2">
-                            <img src="/img/services/3.jpg" alt="">
-                            <div class="corner-box">
-                                <a href="#" class="text">03</a>
+                            <div class="service-options not-active" id="not-active1">
+                                <img src="/img/services/5.jpg" alt="">
+                                <div class="corner-box">
+                                    <a href="#" class="text">05</a>
+                                </div>
+                                <div class="service-option-text">
+                                    VIP Transfer
+                                </div>
                             </div>
-                            <div class="service-option-text">
-                                Airport Transfer
-                            </div>
-                        </div>
-                        <div class="service-options not-active" id="not-active0">
-                            <img src="/img/services/4.jpg" alt="">
-                            <div class="corner-box">
-                                <a href="#" class="text">04</a>
-                            </div>
-                            <div class="service-option-text">
-                                fleet Leasing
-                            </div>
-                        </div>
-                        <div class="service-options not-active" id="not-active1">
-                            <img src="/img/services/5.jpg" alt="">
-                            <div class="corner-box">
-                                <a href="#" class="text">05</a>
-                            </div>
-                            <div class="service-option-text">
-                                VIP Transfer
-                            </div>
-                        </div>
-                        <div class="service-options not-active" id="not-active2">
-                            <img src="/img/services/6.jpg" alt="">
-                            <div class="corner-box">
-                                <a href="#" class="text">06</a>
-                            </div>
-                            <div class="service-option-text">
-                                Private Transfer
+                            <div class="service-options not-active" id="not-active2">
+                                <img src="/img/services/6.jpg" alt="">
+                                <div class="corner-box">
+                                    <a href="#" class="text">06</a>
+                                </div>
+                                <div class="service-option-text">
+                                    Private Transfer
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <button id="ser-btn1" onclick="services1()">.</button>
+                    <button id="ser-btn2" onclick="services2()">.</button>
                 </div>
-                <button id="ser-btn1" onclick="services1()">.</button>
-                <button id="ser-btn2" onclick="services2()">.</button>
+
+                <div class="rent">
+                    <p class="tag color-primary">RENT NOW</p>
+                    <h1 class="color-secondary custom-head">Book Auto Rental</h1>
+                    <div class="rental-form">
+                        <form action="">
+                            <select name="cars" id="cars" aria-label="car-type">
+                                <option value="none" selected disabled hidden>Choose Car Type</option>
+                                <option value="all">All</option>
+                                <option value="luxury">Luxury Cars</option>
+                                <option value="sports">Sports cars</option>
+                                <option value="suv">SUVs</option>
+                                <option value="convertible">Convertible</option>
+                              </select>
+
+                            <select name="pick-up" id="cars" aria-label="pickup">
+                                <option value="none" selected disabled hidden>Pick Up Location</option>
+                                <option value="india">India</option>
+                                <option value="dubai">Dubai</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="America">America</option>
+                              </select>
+
+                            <input type="date" name="pick-up-date" id="pick-up-date" placeholder="Pick Up Date" title="Pick Up Date">
+
+                            <select name="pick-up" id="cars" aria-label="pickup">
+                                <option value="none" selected disabled hidden>Drop Off Location</option>
+                                <option value="india">India</option>
+                                <option value="dubai">Dubai</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="America">America</option>
+                              </select>
+                            <input type="date" name="pick-up-date" id="pick-up-date" placeholder="Pick Up Date" title="Pick Up Date">
+                            <a href="#" class="primary-btn">Rent Now </a>
+                        </form>
+                    </div>
+                </div>
+                <div class="select-your-car">
+                    <p class="color-primary tag">SELECT YOUR CAR</p>
+                    <h1 class="custom-head">
+                        <span class="color-secondary">Luxury</span>
+                        <span class="color-primary">Car Fleet</span>
+                    </h1>
+
+                    <div class="car-fleet-section">
+                        <div class="car-fleet-options">
+                            <img src="/img/car-fleet/1.jpg" alt="">
+                        </div>
+                        <div class="fleet-detail">
+                            <div class="fleet-option-detail">
+                                <h1 class="color-secondary">AUDI Q8</h1>
+                                <br>
+                                <p class="color-des"><i class="fa-solid fa-chair color-primary"></i> 4 seats &emsp; <i class="fa-solid fa-gear color-primary"></i> Auto Gear </p>
+                            </div>
+                            <div class="fleet-price">
+                                <div class=""><a href="#" class="primary-btn">Details </a></div>
+                                <div class="">
+                                    <span class="fleet-car-price color-primary">$450</span>
+                                    <br>
+                                    <p class="color-des">/DAY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-left" onclick=""></a>
+                        <a href="#" class="btn-right"></a>
+                    </div>
+                </div>
+                <div class="gap">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- section 2 ends here -->
+    <section class="section-3">
+        <div class="container">
+            <div class="sec-3">
+                <div class="car-rental-types">
+                    <p class="tag color-primary">CATEGORIES</p>
+                    <h1 class="custom-head"><span class="color-secondary">Rental</span> <span class="color-primary">Car Types</span></h1>
+                </div>
             </div>
         </div>
     </section>
-
     <script src="js/mysc.js"></script>
 </body>
 
