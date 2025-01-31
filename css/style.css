@@ -660,6 +660,7 @@
 /*bg section 2*/
 
 .sec-2 {
+    position: relative;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/section-2/1.jpg);
     background-repeat: no-repeat;
@@ -812,4 +813,250 @@
 
 .car-rental-types {
     margin-top: 50px;
+    background-color: #000000;
+}
+
+.car-rental-types .car-options {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #000000;
+    gap: 20px;
+}
+
+.car-rental-types .car-options .option {
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.car-rental-types .car-options .option img {
+    width: 100%;
+    height: 100%;
+    transition: transform .3s ease-in-out;
+}
+
+.car-rental-types .car-options .option .corner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+    align-content: center;
+    background-color: #000000;
+    border-radius: 0px 50px 0px 0px;
+}
+
+.car-rental-types .car-options .option .corner a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #f5b754;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.car-rental-types .car-options .option .corner a::after {
+    content: "\f35d";
+    font-family: fontawesome;
+}
+
+.car-rental-types .car-options .option:hover img {
+    transform: scale(1.07);
+}
+
+.car-rental-types .car-options .option:hover .corner a {
+    background-color: #f5b754;
+    color: white;
+}
+
+.car-rental-types .car-options .option .car-type {
+    position: absolute;
+    z-index: 100;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    top: 40px;
+    left: 30px
+}
+
+#car-type-btn-1 {
+    position: absolute;
+    left: 730px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    border: 1px solid #f5b754;
+    color: transparent;
+    background-color: transparent;
+}
+
+#car-type-btn-2 {
+    position: absolute;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    left: 765px;
+    border-radius: 100px;
+    border: 1px solid #f5b754;
+    color: transparent;
+    background-color: transparent;
+}
+
+#car-type-btn-1:hover,
+#car-type-btn-2:hover {
+    background-color: #f5b754;
+}
+
+.gap-sec-3 {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #000000;
+}
+
+.bar-sec-3 {
+    background-color: #f5b754;
+    height: 60px;
+    width: 2px;
+}
+
+
+/* section 4 */
+
+.sec-4 {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/section-1/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.sec-4 .Rental-process-sec {
+    width: 100%;
+    background-color: #000000;
+    padding: 50px 0px;
+}
+
+.rental-process {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sec-4 .Rental-process-sec .steps {
+    position: relative;
+    align-content: center;
+    text-align: start;
+    margin: 40px 0px;
+    padding-left: 20px;
+    border-radius: 30px;
+    width: 23%;
+    height: 280px;
+    background-color: #252525;
+    overflow: hidden;
+}
+
+.sec-4 .Rental-process-sec .steps .corner {
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 0px 30px 0px 0px;
+    background-color: #000000;
+}
+
+.sec-4 .Rental-process-sec .steps .corner .text {
+    background-color: #252525;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.sec-4 .promo {
+    padding: 50px;
+    text-align: center;
+}
+
+.sec-4 .promo i {
+    margin: 30px;
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    padding: 30px;
+    border-radius: 50px;
+    color: #ffffff;
+    border: 1px solid #f5b754;
+}
+
+.sec-4 .promo i:hover {
+    color: #f5b754;
+}
+
+.sec-4 .testimonials {
+    padding: 100px 0px;
+    text-align: center;
+    background-color: #000000;
+}
+
+.sec-4 .testimonials .clients-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sec-4 .testimonials .clients-section .client {
+    position: relative;
+    margin: 20px 0;
+    text-align: start;
+    height: 230px;
+    width: 100%;
+    padding: 40px 0;
+    padding-left: 20px;
+    border-radius: 30px;
+    background-color: #252525;
+    width: 20%;
+    overflow: hidden;
+}
+
+.sec-4 .testimonials .clients-section .client .stars {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    color: #f5b754;
+    background-color: #000000;
+    border-radius: 0 0 0 20px;
+}
+
+.sec-4 .testimonials .clients-section .client .corner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 90px;
+    width: 90px;
+    background-color: #000000;
+    align-content: center;
+    text-align: center;
+    border-radius: 0 20px 0 0;
+}
+
+.sec-4 .testimonials .clients-section .client .corner img {
+    width: 80%;
+    border-radius: 50px;
+}
+
+.sec-4 .testimonials .clients-section .client .client-detail {
+    position: absolute;
+    bottom: 30px;
+    left: 100px;
 }
