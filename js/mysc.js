@@ -148,3 +148,20 @@ function services2() {
     document.getElementById('active2').style.opacity = '0';
 
 }
+
+k = 0;
+
+function navbtn() {
+    if (k == 0) {
+        document.getElementById('mobile-nav-bar').style.visibility = 'visible';
+        document.getElementById('mobile-nav-bar').style.opacity = '1';
+        document.getElementById('mobile-nav-bar').style.maxHeight = '600px';
+        k = 1;
+    } else {
+        k = 0;
+        document.getElementById('mobile-nav-bar').style.visibility = 'hidden';
+        document.getElementById('mobile-nav-bar').style.opacity = '0';
+
+        document.getElementById('mobile-nav-bar').style.maxHeight = '0px';
+    }
+}
