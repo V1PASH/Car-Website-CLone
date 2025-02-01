@@ -99,17 +99,17 @@ function services1() {
 
     document.getElementById('active0').style.display = 'block';
     document.getElementById('active0').style.visibility = 'visible';
-    document.getElementById('active0').style.maxWidth = 'fit-content';
+    document.getElementById('active0').style.maxWidth = '100%';
     document.getElementById('active0').style.opacity = '1';
 
     document.getElementById('active1').style.visibility = 'visible';
     document.getElementById('active1').style.display = 'block';
-    document.getElementById('active1').style.maxWidth = 'fit-content';
+    document.getElementById('active1').style.maxWidth = '100%';
     document.getElementById('active1').style.opacity = '1';
 
     document.getElementById('active2').style.visibility = 'visible';
     document.getElementById('active2').style.display = 'block';
-    document.getElementById('active2').style.maxWidth = 'fit-content';
+    document.getElementById('active2').style.maxWidth = '100%';
     document.getElementById('active2').style.opacity = '1';
 
 }
@@ -117,17 +117,17 @@ function services1() {
 function services2() {
     document.getElementById('not-active0').style.visibility = 'visible';
     document.getElementById('not-active0').style.display = 'block';
-    document.getElementById('not-active0').style.maxWidth = 'fit-content';
+    document.getElementById('not-active0').style.maxWidth = '100%';
     document.getElementById('not-active0').style.opacity = '1';
 
     document.getElementById('not-active1').style.visibility = 'visible';
     document.getElementById('not-active1').style.display = 'block';
-    document.getElementById('not-active1').style.maxWidth = 'fit-content';
+    document.getElementById('not-active1').style.maxWidth = '100%';
     document.getElementById('not-active1').style.opacity = '1';
 
     document.getElementById('not-active2').style.visibility = 'visible';
     document.getElementById('not-active2').style.display = 'block';
-    document.getElementById('not-active2').style.maxWidth = 'fit-content';
+    document.getElementById('not-active2').style.maxWidth = '100%';
     document.getElementById('not-active2').style.opacity = '1';
 
 

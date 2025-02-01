@@ -660,6 +660,10 @@
 
 /*bg section 2*/
 
+.mobile-form-date {
+    display: none;
+}
+
 .sec-2 {
     position: relative;
     width: 100%;
@@ -1341,4 +1345,285 @@
     padding: 20px;
     background-color: #000000;
     text-align: center;
+}
+
+@media screen and (min-width:320px) and (max-width:920px) {
+    /* common */
+    .tag {
+        font-size: 82px;
+    }
+    .primary-btn {
+        font-size: 45px;
+        padding: 35px 37px;
+        border-radius: 100px;
+        margin-top: 100px;
+    }
+    .secondary-btn {
+        font-size: 45px;
+        padding: 35px 37px;
+        border-radius: 100px;
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+    .custom-head {
+        font-size: 100px;
+    }
+    .color-des {
+        font-size: 38px;
+    }
+    /*head section*/
+    .first {
+        height: 1200px;
+    }
+    .navbar {
+        display: none;
+    }
+    .head-section .contact {
+        display: none;
+    }
+    .head-section .logo {
+        font-size: 105px;
+    }
+    .main-content .info .car-type {
+        font-size: 200px;
+    }
+    .info-and-price {
+        font-size: 95px;
+    }
+    .info-and-price .price {
+        font-size: 75px;
+    }
+    .info-and-price .after-price {
+        font-size: 65px;
+    }
+    /*about section*/
+    .about-section {
+        height: auto;
+        flex-direction: column;
+    }
+    .about-section .more-about-us {
+        width: 90%;
+        height: 1000px;
+        padding-left: 40px;
+        text-wrap: wrap;
+    }
+    .about-section .more-about-us ul li {
+        margin: 80px 0;
+    }
+    .about-section .image {
+        width: 70%;
+        height: 900px;
+        margin: auto;
+    }
+    /* service options */
+    .services-section .service-option-main .Our-services {
+        flex-direction: column
+    }
+    .services-section .service-option-main .Our-services .service-options {
+        border-radius: 80px;
+    }
+    .about-section .image div a {
+        font-size: 65px;
+        padding: 28px 45px;
+        border: 6px solid #f5b754;
+    }
+    .services-section .service-option-main .Our-services .service-options .corner-box {
+        height: 240px;
+        width: 240px;
+        border-radius: 0px 108px 0px 0px;
+    }
+    .services-section .service-option-main .Our-services .service-options .corner-box .text {
+        padding: 39px;
+        font-size: 76px;
+        border: 6px solid #f5b754;
+    }
+    .services-section .service-option-main .Our-services .service-options .service-option-text {
+        height: 180px;
+        font-size: 70px;
+    }
+    /* rent form */
+    .rental-form form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .rental-form form select {
+        font-size: 45px;
+        margin: 30px 0px;
+        color: white;
+    }
+    .rental-form form input {
+        font-size: 45px;
+        margin: 30px 0px;
+        color: white;
+        width: 100%;
+    }
+    .mobile-form-date {
+        font-size: 40px;
+        display: block;
+        margin: 40px 0;
+    }
+    /* select your car */
+    .select-your-car {
+        height: 1000px;
+    }
+    .car-fleet-options {
+        width: 80%;
+        height: 147%;
+    }
+    .fleet-detail {
+        width: 1100px;
+        height: 200px;
+        bottom: -350px;
+    }
+    .fleet-option-detail h1 {
+        font-size: 65px;
+    }
+    .fleet-option-detail p {
+        font-size: 42px;
+    }
+    .fleet-price .fleet-car-price {
+        font-size: 50px;
+    }
+    .fleet-price div p {
+        font-size: 32px;
+    }
+    /* rental car types */
+    .car-rental-types .car-options {
+        flex-direction: column;
+    }
+    .car-rental-types .car-options .option {
+        margin: auto;
+        width: 80%;
+    }
+    .car-rental-types .car-options .option .corner {
+        height: 220px;
+        width: 220px;
+        border-radius: 0px 112px 0px 0px;
+    }
+    .car-rental-types .car-options .option .corner a {
+        font-size: 65px;
+        padding: 47px;
+        border: 6px solid #f5b754;
+    }
+    /* Rental Process */
+    .rental-process {
+        flex-direction: column;
+    }
+    .sec-4 .Rental-process-sec .steps {
+        width: 70%;
+        height: 600px;
+        margin: 40px auto;
+        padding: 0 40px;
+    }
+    .sec-4 .Rental-process-sec .steps h1 {
+        font-size: 70px;
+    }
+    .sec-4 .Rental-process-sec .steps p {
+        font-size: 50px;
+    }
+    .sec-4 .Rental-process-sec .steps .corner {
+        border-radius: 0 70px 0 0;
+        height: 150px;
+        width: 150px;
+    }
+    .sec-4 .Rental-process-sec .steps .corner .text {
+        font-size: 53px;
+        padding: 30px;
+        border-radius: 80px;
+    }
+    /* promo */
+    .sec-4 .promo i {
+        height: 120px;
+        width: 120px;
+        padding: 60px;
+        align-content: center;
+        font-size: 100px;
+        border-radius: 120px;
+    }
+    /* testimonial */
+    .sec-4 .testimonials .clients-section {
+        flex-direction: column;
+    }
+    .sec-4 .testimonials .clients-section .client {
+        width: 80%;
+        margin: 50px auto;
+        height: 650px;
+        border-radius: 80px;
+        font-size: 45px;
+    }
+    .sec-4 .testimonials .clients-section .client .corner {
+        height: 250px;
+        width: 250px;
+        border-radius: 0 100px 0 0;
+    }
+    .sec-4 .testimonials .clients-section .client .client-detail {
+        left: 280px;
+        bottom: 80px;
+    }
+    .sec-4 .testimonials .clients-section .client .corner img {
+        width: 70%;
+        border-radius: 100px;
+    }
+    /* car news */
+    .car-news {
+        flex-direction: column;
+    }
+    .car-news .news {
+        width: 80%;
+        margin: 40px auto;
+        border-radius: 80px;
+    }
+    .car-news .news .corner {
+        height: 280px;
+        width: 280px;
+        border-radius: 0 100px 0 0;
+    }
+    .car-news .news .corner a {
+        font-size: 75px;
+        padding: 40px;
+        border: 6px solid #f5b754;
+        border-radius: 100px;
+    }
+    .car-news .news .detail {
+        height: 320px;
+    }
+    .car-news .news .detail h3 {
+        font-size: 45px;
+    }
+    .rent-your-car .des {
+        font-size: 35px;
+    }
+    .rent-your-car .connect {
+        margin-top: 80px;
+    }
+    .logos {
+        background-color: rgb(0, 0, 0);
+        flex-wrap: wrap;
+    }
+    .logos img {
+        width: 550px;
+    }
+    /* contact info */
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info .call {
+        width: 50%;
+        font-size: 52px;
+    }
+    .contact-info .call .icon {
+        width: 101px;
+        height: 101px;
+        font-size: 72px;
+        text-align: center;
+        border-radius: 100px;
+    }
+    .contact-info .email {
+        width: 50%;
+    }
+    .contact-info .address {
+        width: 50%;
+    }
 }
