@@ -1502,6 +1502,9 @@
         font-size: 32px;
     }
     /* rental car types */
+    .car-rental-types .car-options .option .car-type {
+        font-size: 100px;
+    }
     .car-rental-types .car-options {
         flex-direction: column;
     }
